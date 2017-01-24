@@ -86,7 +86,7 @@ class RevSliderFunctions{
 
 	
 	//------------------------------------------------------------
-	// get variable from post or from get. get wins.
+	// get variable from post or from get. post wins.
 	public static function getPostGetVariable($name,$initVar = ""){
 		$var = $initVar;
 		if(isset($_POST[$name])) $var = $_POST[$name];
@@ -207,7 +207,9 @@ class RevSliderFunctions{
 			$json = json_encode($arr);
 			$json = addslashes($json);
 		}
-		
+
+		if(empty($json)) $json = '{}';
+
 		$json = "'".$json."'";
 		
 		return($json);

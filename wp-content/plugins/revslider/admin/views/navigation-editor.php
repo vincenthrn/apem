@@ -2,7 +2,7 @@
 /**
  * @package   Revolution Slider
  * @author    ThemePunch <info@themepunch.com>
- * @link      http://www.revolution.themepunch.com/
+ * @link      http://revolution.themepunch.com/
  * @copyright 2015 ThemePunch
  */
  
@@ -26,7 +26,10 @@ $font_families = $rsopr->getArrFontFamilys();
 	<div class="clear_both"></div>
 
 	<div class="title_line nobgnopd" style="margin-bottom: 20px !important;">
-		<div class="icon32" id="icon-options-general"></div>
+		<?php 
+			$icon_general = '<div class="icon32" id="icon-options-general"></div>';
+			echo apply_filters( 'rev_icon_general_filter', $icon_general ); 
+		?>
 		<div class="view_title">
 			<?php _e('Navigation Editor', 'revslider'); ?>
 		</div>
