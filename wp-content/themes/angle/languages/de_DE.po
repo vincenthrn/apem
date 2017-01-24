@@ -1,0 +1,312 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR (c) 2014 Oxygenna.com
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Angle Frontend Translation File 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-13 10:08+0000\n"
+"PO-Revision-Date: 2014-02-05 01:30+0100\n"
+"Last-Translator: Hari Om Wolfer <hariom@sri-ma.de>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.3\n"
+
+#: build/comments.php:22
+#, php-format
+msgid "1 comment"
+msgid_plural "%s comments"
+msgstr[0] "1 Kommentar"
+msgstr[1] "%s Kommentare"
+
+#: build/partials/post-extras.php:32
+msgctxt "comments number"
+msgid "No comments"
+msgstr "Keine Kommentare"
+
+#: build/partials/post-extras.php:32
+msgctxt "comments number"
+msgid "1 comment"
+msgstr "1 Kommentar"
+
+#: build/partials/post-extras.php:32
+#, php-format
+msgctxt "comments number"
+msgid "% comments"
+msgstr " % Kommentare"
+
+#: build/inc/frontend.php:333 build/comments.php:26
+msgid "Join the conversation"
+msgstr "Diskutiere mit"
+
+#: build/archive.php:18 build/archive.php:22 build/archive.php:26
+msgid "All posts from"
+msgstr "Alle Artikel in"
+
+#: build/inc/options/widgets/swatch_twitter.php:20
+msgid "Displays you latest tweets"
+msgstr "Zeigt deine neuesten Tweets"
+
+#: build/inc/options/widgets/swatch_twitter.php:21
+msgid "Twitter Feed"
+msgstr "Twitter Feed"
+
+#: build/inc/options/widgets/swatch_twitter.php:30
+#, php-format
+msgid ""
+"Please configure your Twitter username for the <a href=\"%s\">Twitter "
+"Widget</a>."
+msgstr ""
+"Bitte konfiguriere deinen Twitter Username für das <a href=\"%s\">Twitter "
+"Widget</a>."
+
+#: build/inc/options/widgets/default_overrides.php:23
+msgid "Recent Posts"
+msgstr "Neueste Kommentare"
+
+#: build/inc/options/widgets/default_overrides.php:73
+msgid "Archives"
+msgstr "Archive"
+
+#: build/inc/options/widgets/default_overrides.php:81
+msgid "Select Month"
+msgstr "Wähle einen Monat"
+
+#: build/inc/frontend.php:45
+msgid "Square Image"
+msgstr "Quadratisches Bild"
+
+#: build/inc/frontend.php:46
+msgid "Hexagon Image"
+msgstr "Sechseckiges Bild"
+
+#: build/inc/frontend.php:47
+msgid "Rectangle Image"
+msgstr "Rechteckiges Bild"
+
+#: build/inc/frontend.php:49
+msgid "Square Small Image"
+msgstr "Quadratisches Bild, klein"
+
+#: build/inc/frontend.php:50
+msgid "Hexagon Small Image"
+msgstr "Sechseckiges Bild, klein"
+
+#: build/inc/frontend.php:51
+msgid "Rectangle Small Image"
+msgstr "Rechteckiges Bild, klein"
+
+#: build/inc/frontend.php:113
+msgid "Primary Navigation"
+msgstr "Haupt-Navigation"
+
+#: build/inc/frontend.php:114
+msgid "Account Navigation"
+msgstr "Account Navigation"
+
+#: build/inc/frontend.php:236
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: build/inc/frontend.php:236
+msgid "(Edit)"
+msgstr "(Editieren)"
+
+#: build/inc/frontend.php:258
+msgid "reply"
+msgstr "Antworten"
+
+#: build/inc/frontend.php:317
+msgid "YOUR NAME *"
+msgstr "DEIN NAME"
+
+#: build/inc/frontend.php:318
+msgid "YOUR EMAIL *"
+msgstr "DEINE EMAIL"
+
+#: build/inc/frontend.php:322
+#, php-format
+msgid "Required fields are marked %s"
+msgstr "Pflichtfelder sind mit %s markiert"
+
+#: build/inc/frontend.php:325
+msgid "YOUR MESSAGE"
+msgstr "DEINE NACHRICHT"
+
+#: build/inc/frontend.php:326
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Du musst <a href=\"%s\">eingeloggt</a> um einen Kommentar schreiben zu "
+"können."
+
+#: build/inc/frontend.php:327
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Eingeloggt als <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Aus "
+"diesem Account ausloggen\">Ausloggen?</a>"
+
+#: build/inc/frontend.php:334
+msgid "Leave a Reply"
+msgstr "Schreibe eine Antwort"
+
+#: build/inc/frontend.php:335
+msgid "Cancel reply"
+msgstr "Antwort löschen"
+
+#: build/inc/frontend.php:336
+msgid "Add comment"
+msgstr "Schreibe einen Kommentar"
+
+#: build/inc/frontend.php:1111
+msgid "Search"
+msgstr "Suche"
+
+#: build/inc/frontend.php:1140
+msgid ""
+" <span class=\"hex-alt\"><i class=\"fa fa-angle-left\"></i></span>Previous"
+msgstr ""
+" <span class=\"hex-alt\"><i class=\"fa fa-angle-left\"></i></span>Zurück"
+
+#: build/inc/frontend.php:1141
+msgid "Next<span class=\"hex-alt\"><i class=\"fa fa-angle-right\"></i></span>"
+msgstr "Vor<span class=\"hex-alt\"><i class=\"fa fa-angle-right\"></i></span>"
+
+#: build/inc/frontend.php:1210
+msgid "Next page"
+msgstr "Nächste Seite"
+
+#: build/inc/frontend.php:1211
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+#: build/inc/frontend.php:1337
+#, php-format
+msgid "Search Results: &ldquo;%s&rdquo;"
+msgstr "Suchergebnisse: &ldquo;%s&rdquo;"
+
+#: build/inc/frontend.php:1339
+#, php-format
+msgid "&nbsp;&ndash; Page %s"
+msgstr "&nbsp;&ndash; Seite %s"
+
+#: build/partials/content-video.php:52 build/partials/content-link.php:48
+#: build/partials/content-audio.php:45 build/partials/content-gallery.php:64
+#: build/partials/content.php:37 build/partials/content-image.php:37
+#: build/partials/content-search.php:19
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink für %s"
+
+#: build/partials/content-portfolio-single-small.php:146
+#: build/partials/content-portfolio-single-big.php:139
+msgid "Features"
+msgstr "Merkmale"
+
+#: build/partials/content-portfolio-single-small.php:160
+#: build/partials/content-portfolio-single-big.php:153
+msgid "URL"
+msgstr "URL"
+
+#: build/partials/shortcodes/portfolio/filters.php:10
+msgid "all"
+msgstr "Alle"
+
+#: build/partials/shortcodes/countdown/countdown.php:7
+msgid "days"
+msgstr "Tage"
+
+#: build/partials/shortcodes/countdown/countdown.php:15
+msgid "hours"
+msgstr "Stunden"
+
+#: build/partials/shortcodes/countdown/countdown.php:23
+msgid "minutes"
+msgstr "Minuten"
+
+#: build/partials/shortcodes/countdown/countdown.php:31
+msgid "seconds"
+msgstr "Sekunden"
+
+#: build/partials/content-account.php:28
+msgid "create an account menu in the admin options"
+msgstr "Erstelle ein Account-Menu in den Admin-Optionen"
+
+#: build/partials/portfolio-social-links.php:21
+msgid "Share"
+msgstr "Teilen"
+
+#: build/partials/post-related.php:43
+msgid "Related Posts"
+msgstr "Verwandte Artikel"
+
+#: build/partials/loop.php:41
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: build/partials/loop.php:47
+msgid "Sorry, no posts were found for this category."
+msgstr "Für diese Kategorie wurden leider keine Artikel gefunden"
+
+#: build/partials/loop.php:50
+msgid "Sorry, no posts found in that timeframe"
+msgstr "Für diesen Zeitraum wurden leider keine Artikel gefunden"
+
+#: build/partials/loop.php:53
+msgid "Sorry, no posts from that author were found"
+msgstr "Von diesem Autor wurden leider keine Artikel gefunden"
+
+#: build/partials/loop.php:56
+#, php-format
+msgid "Sorry, no posts were tagged with  \"%1$s\""
+msgstr "Für das Schlagwort \"%1$s\" wurden leider keine Artikel gefunden."
+
+#: build/partials/loop.php:59
+#, php-format
+msgid "Sorry, no search results were found for  \"%1$s\""
+msgstr "Für \"%1$s\" gibt es leider keine Suchergebnisse"
+
+#: build/partials/loop.php:62
+msgid "Sorry, nothing found"
+msgstr "Leider nichts gefunden"
+
+#: build/partials/social-links.php:22
+msgid "Share this post"
+msgstr "Teile diesen Artikel"
+
+#: build/comments.php:41
+msgid "&larr; Older"
+msgstr "&larr; Älter"
+
+#: build/comments.php:42
+msgid "Newer &rarr;"
+msgstr "Neuer &rarr;"
+
+#: build/comments.php:53
+msgid "Comments are closed."
+msgstr "Kommentare sind deaktiviert"
+
+#: build/tag.php:16
+msgid "All posts tagged"
+msgstr "Alle Artikel mit dem Schlagwort"
+
+#: build/search.php:16
+msgid "Results for"
+msgstr "Ergebnisse für"
+
+#: build/single.php:42
+msgid "Previous"
+msgstr "Zurück"
+
+#: build/single.php:49
+msgid "Next"
+msgstr "Vor"

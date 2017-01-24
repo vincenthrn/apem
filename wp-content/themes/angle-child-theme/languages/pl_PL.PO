@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-05 09:24-0400\n"
+"PO-Revision-Date: 2015-05-18 03:55+0100\n"
+"Last-Translator: Max Czapski <max@mediahat.net>\n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#: artifacts/wordpress/build/tag.php:16
+msgid "All posts tagged"
+msgstr "Wszystkie tagowane posty"
+
+#: artifacts/wordpress/build/archive.php:18
+#: artifacts/wordpress/build/archive.php:22
+#: artifacts/wordpress/build/archive.php:26
+msgid "All posts from"
+msgstr "Wszystkie posty z"
+
+#: artifacts/wordpress/build/single.php:42
+#: artifacts/wordpress/build/partials/content-portfolio-single-big.php:79
+#: artifacts/wordpress/build/partials/content-portfolio-single-small.php:80
+#: artifacts/wordpress/build/partials/shortcodes/portfolio/items.php:25
+msgid "Previous"
+msgstr "Poprzednie"
+
+#: artifacts/wordpress/build/single.php:49
+#: artifacts/wordpress/build/partials/content-portfolio-single-big.php:84
+#: artifacts/wordpress/build/partials/content-portfolio-single-small.php:85
+#: artifacts/wordpress/build/partials/shortcodes/portfolio/items.php:25
+msgid "Next"
+msgstr "Następne"
+
+#: artifacts/wordpress/build/inc/frontend.php:45
+msgid "Square Image"
+msgstr "Kwadratowy obraz"
+
+#: artifacts/wordpress/build/inc/frontend.php:46
+msgid "Hexagon Image"
+msgstr "Heksagonalny obraz"
+
+#: artifacts/wordpress/build/inc/frontend.php:47
+msgid "Rectangle Image"
+msgstr "Prostokątny obraz"
+
+#: artifacts/wordpress/build/inc/frontend.php:49
+msgid "Square Small Image"
+msgstr "Kwadratowy obraz (mały)"
+
+#: artifacts/wordpress/build/inc/frontend.php:50
+msgid "Hexagon Small Image"
+msgstr "Heksagonalny obraz (mały)"
+
+#: artifacts/wordpress/build/inc/frontend.php:51
+msgid "Rectangle Small Image"
+msgstr "Prostokątny obraz (mały)"
+
+#: artifacts/wordpress/build/inc/frontend.php:113
+msgid "Primary Navigation"
+msgstr "Główna nawigacja"
+
+#: artifacts/wordpress/build/inc/frontend.php:114
+msgid "Account Navigation"
+msgstr "Nawigacja na poziomie konta"
+
+#: artifacts/wordpress/build/inc/frontend.php:155
+msgid "No more items to load."
+msgstr "Nie ma więcej treści do ładowania."
+
+#: artifacts/wordpress/build/inc/frontend.php:156
+msgid "Loading the next set of posts..."
+msgstr "Ładuję kolejne posty..."
+
+#: artifacts/wordpress/build/inc/frontend.php:263
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: artifacts/wordpress/build/inc/frontend.php:263
+msgid "(Edit)"
+msgstr "(Edycja)"
+
+#: artifacts/wordpress/build/inc/frontend.php:285
+msgid "reply"
+msgstr "odpowiedz"
+
+#: artifacts/wordpress/build/inc/frontend.php:344
+msgid "YOUR NAME *"
+msgstr "Twoje imię i nazwisko *"
+
+#: artifacts/wordpress/build/inc/frontend.php:345
+msgid "YOUR EMAIL *"
+msgstr "Twój e-mail *"
+
+#: artifacts/wordpress/build/inc/frontend.php:349
+#, php-format
+msgid "Required fields are marked %s"
+msgstr "Wymagane pola są zaznaczone: %s"
+
+#: artifacts/wordpress/build/inc/frontend.php:352
+msgid "YOUR MESSAGE"
+msgstr "Twoja wiadomość"
+
+#: artifacts/wordpress/build/inc/frontend.php:353
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr "Musisz być <a href=\"%s\">zalogowany</a>, by napisać komentarz."
+
+#: artifacts/wordpress/build/inc/frontend.php:354
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Zalogowany jako <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Wyloguj "
+"się z tego konta\">Wylogować się?</a>"
+
+#: artifacts/wordpress/build/inc/frontend.php:360
+#: artifacts/wordpress/build/comments.php:26
+msgid "Join the conversation"
+msgstr "Dołącz do rozmowy"
+
+#: artifacts/wordpress/build/inc/frontend.php:361
+msgid "Leave a Reply"
+msgstr "Odpowiedz"
+
+#: artifacts/wordpress/build/inc/frontend.php:362
+msgid "Cancel reply"
+msgstr "Anuluj odpowiedź"
+
+#: artifacts/wordpress/build/inc/frontend.php:363
+msgid "Add comment"
+msgstr "Dodaj komentarz"
+
+#: artifacts/wordpress/build/inc/frontend.php:576
+msgid "Read more"
+msgstr "Czytaj dalej"
+
+#: artifacts/wordpress/build/inc/frontend.php:1169
+msgid "Search"
+msgstr "Szukaj"
+
+#: artifacts/wordpress/build/inc/frontend.php:1264
+msgid ""
+" <span class=\"hex-alt\"><i class=\"fa fa-angle-left\"></i></span>Previous"
+msgstr ""
+" <span class=\"hex-alt\"><i class=\"fa fa-angle-left\"></i></span>Poprzednie"
+
+#: artifacts/wordpress/build/inc/frontend.php:1265
+msgid "Next<span class=\"hex-alt\"><i class=\"fa fa-angle-right\"></i></span>"
+msgstr ""
+"Następne<span class=\"hex-alt\"><i class=\"fa fa-angle-right\"></i></span>"
+
+#: artifacts/wordpress/build/inc/frontend.php:1334
+msgid "Next page"
+msgstr "Następna strona"
+
+#: artifacts/wordpress/build/inc/frontend.php:1335
+msgid "Previous page"
+msgstr "Poprzednia strona"
+
+#: artifacts/wordpress/build/inc/frontend.php:1480
+#, php-format
+msgid "Search Results: &ldquo;%s&rdquo;"
+msgstr "Wyniki wyszukiwania: &ldquo;%s&rdquo;"
+
+#: artifacts/wordpress/build/inc/frontend.php:1482
+#, php-format
+msgid "&nbsp;&ndash; Page %s"
+msgstr "&nbsp;&ndash; Strona %s"
+
+#: artifacts/wordpress/build/inc/options/widgets/swatch_twitter.php:20
+msgid "Displays you latest tweets"
+msgstr "Pokaż ostatnie tweety"
+
+#: artifacts/wordpress/build/inc/options/widgets/swatch_twitter.php:21
+msgid "Twitter Feed"
+msgstr "Wiadomości z Twittera"
+
+#: artifacts/wordpress/build/inc/options/widgets/swatch_twitter.php:30
+#, php-format
+msgid ""
+"Please configure your Twitter username for the <a href=\"%s\">Twitter "
+"Widget</a>."
+msgstr ""
+"Proszę skonfiguruj swoją nazwę użytkownika dla widżetu Twittera <a href=\"%s"
+"\"></a>."
+
+#: artifacts/wordpress/build/inc/options/widgets/default_overrides.php:23
+msgid "Recent Posts"
+msgstr "Ostatnie posty"
+
+#: artifacts/wordpress/build/inc/options/widgets/default_overrides.php:73
+msgid "Archives"
+msgstr "Archiwa"
+
+#: artifacts/wordpress/build/inc/options/widgets/default_overrides.php:81
+msgid "Select Month"
+msgstr "Wybierz miesiąc"
+
+#: artifacts/wordpress/build/comments.php:41
+msgid "&larr; Older"
+msgstr "&larr; Starsze"
+
+#: artifacts/wordpress/build/comments.php:42
+msgid "Newer &rarr;"
+msgstr "Nowsze &rarr;"
+
+#: artifacts/wordpress/build/comments.php:53
+msgid "Comments are closed."
+msgstr "Komentarze są wyłączone."
+
+#: artifacts/wordpress/build/search.php:16
+msgid "Results for"
+msgstr "Wyniki wyszukiwania dla"
+
+#: artifacts/wordpress/build/partials/content-link.php:48
+#: artifacts/wordpress/build/partials/content-gallery.php:64
+#: artifacts/wordpress/build/partials/content-audio.php:45
+#: artifacts/wordpress/build/partials/content-image.php:37
+#: artifacts/wordpress/build/partials/content-search.php:19
+#: artifacts/wordpress/build/partials/content.php:37
+#: artifacts/wordpress/build/partials/content-video.php:68
+#, php-format
+msgid "Permalink to %s"
+msgstr "Permalink na %s"
+
+#: artifacts/wordpress/build/partials/content-portfolio-single-big.php:139
+#: artifacts/wordpress/build/partials/content-portfolio-single-small.php:146
+msgid "Features"
+msgstr "Szczegóły"
+
+#: artifacts/wordpress/build/partials/content-portfolio-single-big.php:153
+#: artifacts/wordpress/build/partials/content-portfolio-single-small.php:160
+msgid "URL"
+msgstr "URL"
+
+#: artifacts/wordpress/build/partials/post-related.php:49
+msgid "Related Posts"
+msgstr "Powiązane posty"
+
+#: artifacts/wordpress/build/partials/post-extras.php:32
+msgid "No comments"
+msgstr "Brak komentarzy"
+
+#: artifacts/wordpress/build/partials/post-extras.php:32
+msgid "1 comment"
+msgstr "1 komentarz"
+
+#: artifacts/wordpress/build/partials/post-extras.php:32
+#, php-format
+msgid "% comments"
+msgstr "% komentarze/y"
+
+#: artifacts/wordpress/build/partials/portfolio-social-links.php:21
+msgid "Share"
+msgstr "Udostępnij"
+
+#: artifacts/wordpress/build/partials/portfolio-social-links.php:25
+msgid "Share on Twitter"
+msgstr "Udostępnij na Twitterze"
+
+#: artifacts/wordpress/build/partials/portfolio-social-links.php:30
+msgid "Share on Facebook"
+msgstr "Udostępnij na Facebooku"
+
+#: artifacts/wordpress/build/partials/portfolio-social-links.php:35
+msgid "Pin on Pinterest"
+msgstr "Pin na Pinterest"
+
+#: artifacts/wordpress/build/partials/portfolio-social-links.php:40
+msgid "Share on Google+"
+msgstr "Udostępnij na Google+"
+
+#: artifacts/wordpress/build/partials/loop.php:41
+msgid "Nothing Found"
+msgstr "Brak wyników"
+
+#: artifacts/wordpress/build/partials/loop.php:47
+msgid "Sorry, no posts were found for this category."
+msgstr "Brak postów w tej kategorii."
+
+#: artifacts/wordpress/build/partials/loop.php:50
+msgid "Sorry, no posts found in that timeframe"
+msgstr "Brak postów w wybranym okresie"
+
+#: artifacts/wordpress/build/partials/loop.php:53
+msgid "Sorry, no posts from that author were found"
+msgstr "Brak postów tego autora"
+
+#: artifacts/wordpress/build/partials/loop.php:56
+#, php-format
+msgid "Sorry, no posts were tagged with  \"%1$s\""
+msgstr "Brak postów z tagiem  \"%1$s\""
+
+#: artifacts/wordpress/build/partials/loop.php:59
+#, php-format
+msgid "Sorry, no search results were found for  \"%1$s\""
+msgstr "Brak wyników wyszukiwania dla  \"%1$s\""
+
+#: artifacts/wordpress/build/partials/loop.php:62
+msgid "Sorry, nothing found"
+msgstr "Brak wyników"
+
+#: artifacts/wordpress/build/partials/content-account.php:29
+msgid "create an account menu in the admin options"
+msgstr "utwórz menu konta w opcjach administracyjnych"
+
+#: artifacts/wordpress/build/partials/shortcodes/countdown/countdown.php:7
+msgid "days"
+msgstr "dni"
+
+#: artifacts/wordpress/build/partials/shortcodes/countdown/countdown.php:15
+msgid "hours"
+msgstr "godzin(y)"
+
+#: artifacts/wordpress/build/partials/shortcodes/countdown/countdown.php:23
+msgid "minutes"
+msgstr "minut(y)"
+
+#: artifacts/wordpress/build/partials/shortcodes/countdown/countdown.php:31
+msgid "seconds"
+msgstr "sekund(y)"
+
+#: artifacts/wordpress/build/partials/shortcodes/posts/masonry.php:4
+#: artifacts/wordpress/build/partials/shortcodes/portfolio/filters.php:10
+msgid "all"
+msgstr "wszystkie"
+
+#: artifacts/wordpress/build/partials/shortcodes/social/social-links.php:22
+msgid "Share this post"
+msgstr "Udostępnij ten post"

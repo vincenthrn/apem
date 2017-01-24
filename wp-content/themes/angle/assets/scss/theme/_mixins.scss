@@ -1,0 +1,1462 @@
+// Header setup mixin
+@mixin header-setup (
+                    $line-height,       // Line height of the navbar
+                    $navbar-height,     // Navigation bar height
+                    $navbar-scrolled,   // Navigation bar height after scrolling
+                    $dropdown-width     // Width of the dropdown menu
+                    ) {
+  #masthead .navbar-brand {
+    padding: 0;
+    line-height: $navbar-height;
+    height: $navbar-height;
+    img {
+      left: 4px;
+      vertical-align: middle;
+      max-height: 100%;
+    }
+  }
+  #masthead {
+    .nav {
+      > li {
+        > a {
+          padding-top: ($navbar-height - $line-height) / 2;
+          padding-bottom: ($navbar-height - $line-height) / 2;
+          &:before {
+            margin-bottom: - ($navbar-height - $line-height) / 4 - 2;
+          }
+        }
+      }
+      li.active > a, >li a:hover, > li.current-menu-item >a, > li.current-page-parent > a, > li.current-menu-parent > a, > li.current-page-ancestor > a, > li.current-menu-ancestor > a {
+        &:before {
+            margin-bottom: - ($navbar-height - $line-height) / 4;
+        }
+      }
+    }
+  }
+  #masthead .navbar-text {
+    line-height: $line-height;
+    margin-top: ($navbar-height - $line-height) / 2;
+    margin-bottom: ($navbar-height - $line-height) / 2;
+  }
+  #masthead.navbar {
+    min-height: $navbar-height;
+  }
+  #masthead.navbar-scrolled, #masthead.navbar-animate-display  {
+    min-height: $navbar-scrolled;
+    .navbar-brand {
+      line-height: $navbar-scrolled;
+      height: $navbar-scrolled;
+    }
+  }
+  #masthead.navbar-scrolled .navbar-nav > li > a {
+    padding-top: (($navbar-scrolled - $line-height) / 2);
+    padding-bottom: (($navbar-scrolled - $line-height) / 2);
+  }
+  #masthead.navbar-scrolled .navbar-text {
+    margin-top: (($navbar-scrolled - $line-height) / 2);
+    margin-bottom: (($navbar-scrolled - $line-height) / 2);
+  }
+
+  #masthead .dropdown-menu {
+    min-width: $dropdown-width;
+  }
+  .navbar-toggle {
+    margin-top: ($navbar-height - 34) / 2;
+    margin-bottom: ($navbar-height - 34) / 2;
+  }
+  .navbar-scrolled .navbar-toggle {
+    margin-top: ($navbar-scrolled - 34) / 2;
+    margin-bottom: ($navbar-scrolled - 34) / 2;
+  }
+}
+
+// Default color Mixin
+@mixin color-defaults (
+                        $btn-default-text,            // Default button text color
+                        $btn-default-bg,              // Default button bg color
+                        $btn-default-bg-hover,        // Default button bg hover color
+
+                        $btn-warning-text,            // Warning button text color
+                        $btn-warning-bg,              // Warning button bg color
+                        $btn-warning-bg-hover,        // Warning button bg hover color
+
+                        $btn-danger-text,             // Warning button text color
+                        $btn-danger-bg,               // Warning button bg color
+                        $btn-danger-bg-hover,         // Warning button bg hover color
+
+                        $btn-success-text,            // Success button text color
+                        $btn-success-bg,              // Success button bg color
+                        $btn-success-bg-hover,        // Success button bg hover color
+
+                        $btn-info-text,               // Info button text color
+                        $btn-info-bg,                 // Info button bg color
+                        $btn-info-bg-hover,           // Info button bg hover color
+
+                        $btn-icons-text,              // Button Icon color
+                        $btn-icons-bg,                // Button Icon bg
+
+                        $overlay-text,                // Overlay areas text
+                        $overlay-bg,                  // Overlay areas background
+
+                        $magnific-overlay-bg,         // Magnific background
+                        $magnific-close-icon,         // Magnific close icon
+                        $magnific-close-bg,           // Magnific close background
+
+                        $portfolio-hover-text,        // Portfolio hovers text
+                        $portfolio-hover-bg,          // Portfolio hovers bg
+                        $portfolio-hover-icons,       // Portfolio hovers icons
+                        $portfolio-hover-icons-bg,    // Portfolio hovers icons bg
+
+                        $top-icon,                     // Go to top icon
+                        $top-icon-bg,                  // Go to top bg
+
+                        $loader-color,
+                        $loader-bg
+
+                    ) {
+
+  // Buttons
+  .btn {
+    .hex-alt {
+      background: $btn-icons-bg;
+      &:before {
+        border-right-color: $btn-icons-bg;
+      }
+      &:after {
+        border-left-color: $btn-icons-bg;
+      }
+    }
+    i {
+      color: $btn-icons-text !important;
+    }
+  }
+  .btn-default {
+    background: $btn-default-bg !important;
+    color: $btn-default-text !important;
+    &:hover {
+      background: $btn-default-bg-hover !important;
+    }
+    &.btn-icon-right:after {
+      border-left-color: $btn-default-bg;
+    }
+    &.btn-icon-left:after {
+      border-right-color: $btn-default-bg;
+    }
+    &.btn-icon-right:hover:after {
+        border-left-color: $btn-default-bg-hover;
+    }
+    &.btn-icon-left:hover:after {
+        border-right-color: $btn-default-bg-hover;
+    }
+  }
+  .btn-warning {
+    background: $btn-warning-bg !important;
+    color: $btn-warning-text !important;
+    &:hover {
+      background: $btn-warning-bg-hover !important;;
+    }
+    &.btn-icon-right:after {
+      border-left-color: $btn-warning-bg;
+    }
+    &.btn-icon-left:after {
+      border-right-color: $btn-warning-bg;
+    }
+    &.btn-icon-right:hover:after {
+        border-left-color: $btn-warning-bg-hover;
+    }
+    &.btn-icon-left:hover:after {
+        border-right-color: $btn-warning-bg-hover;
+    }
+  }
+  .btn-danger {
+    background: $btn-danger-bg !important;
+    color: $btn-danger-text !important;
+    &:hover {
+      background: $btn-danger-bg-hover !important;
+    }
+    &.btn-icon-right:after {
+      border-left-color: $btn-danger-bg;
+    }
+    &.btn-icon-left:after {
+      border-right-color: $btn-danger-bg;
+    }
+    &.btn-icon-right:hover:after {
+      border-left-color: $btn-danger-bg-hover;
+    }
+    &.btn-icon-left:hover:after {
+      border-right-color: $btn-danger-bg-hover;
+    }
+  }
+  .btn-success {
+    background: $btn-success-bg !important;
+    color: $btn-success-text !important;
+    &:hover {
+      background: $btn-success-bg-hover !important;
+    }
+    &.btn-icon-right:after {
+      border-left-color: $btn-success-bg;
+    }
+    &.btn-icon-left:after {
+      border-right-color: $btn-success-bg;
+    }
+    &.btn-icon-right:hover:after {
+        border-left-color: $btn-success-bg-hover;
+    }
+    &.btn-icon-left:hover:after {
+        border-right-color: $btn-success-bg-hover;
+    }
+  }
+  .btn-info {
+    background: $btn-info-bg !important;
+    color: $btn-info-text !important;
+    &:hover {
+      background: $btn-info-bg-hover !important;
+    }
+    &.btn-icon-right:after {
+      border-left-color: $btn-info-bg;
+    }
+    &.btn-icon-left:after {
+      border-right-color: $btn-info-bg;
+    }
+    &.btn-icon-right:hover:after {
+      border-left-color: $btn-info-bg-hover;
+    }
+    &.btn-icon-left:hover:after {
+      border-right-color: $btn-info-bg-hover;
+    }
+  }
+
+  // Pace styles
+  .pace-overlay {
+    background: $loader-bg;
+  }
+  .pace-dot .pace-progress-inner {
+    background: $loader-color;
+  }
+  .pace-minimal .pace .pace-progress {
+    background: $loader-color;
+  }
+  .pace-counter .pace .pace-progress:after {
+    color: $loader-color;
+  }
+
+
+  // Overlay areas
+  .post-media .feature-image {
+    background-color: $overlay-bg;
+    i {
+      color: $overlay-text;
+    }
+  }
+  .box-caption {
+    background-color: $overlay-bg;
+    color: rgba($overlay-text, .8);
+    h3, h4 {
+      color: $overlay-text !important;
+    }
+  }
+
+  // Magnific popup
+  .mfp-bg {
+    background: $magnific-overlay-bg;
+  }
+  .mfp-image-holder .mfp-close,
+  .mfp-iframe-holder .mfp-close {
+    background-color: $magnific-close-bg;
+    color: $magnific-close-icon;
+    &:before {
+      border-bottom-color: $magnific-close-bg;
+    }
+    &:after {
+      border-top-color: $magnific-close-bg;
+    }
+  }
+
+  // Portfolio
+  .portfolio .hex-alt {
+    background: $portfolio-hover-icons-bg !important;
+  }
+  .portfolio .hex-alt:before{
+    border-right-color: $portfolio-hover-icons-bg;
+  }
+  .portfolio .hex-alt:after {
+    border-left-color: $portfolio-hover-icons-bg;
+  }
+  .portfolio-figure:hover {
+    background: $portfolio-hover-bg;
+  }
+  .portfolio figcaption {
+    background: $portfolio-hover-bg;
+    color: rgba($portfolio-hover-text, .8);
+    h4 a {
+      color: $portfolio-hover-text !important;
+    }
+    i {
+      color: $portfolio-hover-icons !important;
+    }
+  }
+  .portfolio-round figcaption {
+    box-shadow: 0px 0px 0px 1px $portfolio-hover-bg;
+  }
+  .portfolio .more, .portfolio .link {
+    background-color: $portfolio-hover-icons-bg;
+    color: $portfolio-hover-icons;
+  }
+
+  // Go to top button
+  .go-top {
+    background: $top-icon-bg !important;
+    i {
+      color: $top-icon;
+    }
+    &:before {
+      border-right-color: $top-icon-bg !important;
+    }
+    &:after {
+      border-left-color: $top-icon-bg !important;
+    }
+  }
+
+  // Audio player
+  .audioplayer {
+    background-color: $top-icon-bg;
+  }
+
+    // Gravity Forms
+  .gform_wrapper .gfield_required.gfield_error, .gform_wrapper .gfield_error .gfield_label, .gform_wrapper .gfield_contains_required.gfield_error {
+    color: darken($btn-danger-bg, 20%);
+  }
+  .gform_wrapper .gfield_error input, .gform_wrapper .gfield_error select, .gform_wrapper .gfield_error textarea {
+    border: 1px solid darken(rgba($btn-danger-bg, .5), 10%);
+    background: rgba($btn-danger-bg, .5);
+    color: darken($btn-danger-bg, 20%);
+  }
+  .gform_wrapper .gfield_error input:focus, .gform_wrapper .gfield_error select:focus, .gform_wrapper .gfield_error textarea:focus {
+    box-shadow: 0px 3px 0px $btn-danger-bg;
+  }
+  .validation_error {
+    background: $btn-danger-bg;
+    color: $btn-danger-text
+  }
+  .validation_error hr {
+    border-top-color: $btn-danger-bg;
+  }
+  .validation_error .alert-link {
+    color: darken($btn-danger-text, 10%);
+  }
+}
+
+
+// Color swatch Mixin
+@mixin color-swatch($text-color,
+                    $header-color,
+                    $small-color,
+                    $icon-color,
+
+                    $link-color,
+                    $link-color-hover,
+                    $link-color-active,
+                    $link-header,
+
+                    $background,
+                    $background-reverse,
+                    $overlay,
+
+                    $form-background,
+                    $form-color,
+                    $form-active,
+                    $primary-button-background,
+                    $primary-button-text
+                    ) {
+
+  background: $background;
+  color: $text-color;
+
+  // Section decorations
+  .decor {
+    fill: $background;
+    stroke: $background-reverse;
+  }
+
+  // Basic typography
+  h1, h2, h3, h4, h5, h6 {
+    color: $header-color;
+    a {
+      color: $link-header;
+    }
+    small {
+      color: $text-color;
+    }
+  }
+  a{
+    color: $link-color;
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+  small {
+    color: $small-color;
+    a {
+      color: $small-color;
+    }
+    a:hover {
+      color: $link-color;
+    }
+  }
+  i {
+    color: $icon-color;
+  }
+  blockquote {
+    border-color: $overlay;
+    small {
+      color: $header-color;
+    }
+  }
+  ::selection {
+    background: $background-reverse;
+    color: $background;
+    }
+  ::-moz-selection {
+    background: $background-reverse;
+    color: $background;
+  }
+
+  // hr
+  hr {
+    border-top-color: $overlay;
+  }
+
+  // Pre
+  pre {
+    background: $text-color;
+    color: $background;
+  }
+
+  // Section Headers
+  .section-header:after, .bordered-header:after {
+    background: $background-reverse;
+  }
+
+  // Other links
+  .active {
+    color: $link-color-active;
+  }
+
+
+  // Buttons
+  .btn-primary, button, input[type="submit"] {
+    background-color: $primary-button-background;
+    color: $primary-button-text;
+    &:hover {
+      background-color: rgba($primary-button-background, .9);
+      color: $primary-button-text;
+    }
+    &.btn-icon-right:after {
+      border-left-color: $primary-button-background;
+    }
+    &.btn-icon-left:after {
+      border-right-color: $primary-button-background;
+    }
+    &.btn-icon-right:hover:after {
+        border-left-color: rgba($primary-button-background, .9);
+    }
+    &.btn-icon-left:hover:after {
+        border-right-color: rgba($primary-button-background, .9);
+    }
+    .hex-alt {
+      background: rgba($primary-button-text, .2);
+      &:before {
+        border-right-color: rgba($primary-button-text, .2);
+      }
+      &:after {
+        border-left-color: rgba($primary-button-text, .2);
+      }
+      i {
+        color: $white !important;
+      }
+    }
+  }
+  .btn-link {
+    text-decoration: none;
+    box-shadow: 0px 0px 0px 1px $link-color inset;
+    &:hover {
+      text-decoration: none;
+      color: $link-color;
+      background: rgba($primary-button-background, .05);
+    }
+  }
+
+  // Forms
+  select, textarea, input, .uneditable-input, .input-group-btn {
+    background: $form-background;
+    color: $form-color;
+    &:-moz-placeholder {
+      color: lighten($form-color, 5%);
+    }
+    &::-moz-placeholder {
+      color: lighten($form-color, 5%);
+    }
+    &:-ms-input-placeholder {
+      color: lighten($form-color, 5%);
+    }
+    &::-webkit-input-placeholder {
+      color: lighten($form-color, 5%);
+    }
+  }
+  input:focus, textarea:focus, .form-control:focus {
+    @include box-shadow(0px 3px 0px $form-active);
+  }
+  .form-icon-group i {
+    color: $primary-button-background;
+  }
+  input[type="button"] {
+    background: $primary-button-background;
+    color: $primary-button-text;
+  }
+  .select-wrap {
+    background: $form-background;
+    select {
+      background: transparent;
+    }
+  }
+
+
+  // Tables
+  .table th {
+    background-color: $background-reverse;
+    text-transform: uppercase;
+    color: $background;
+  }
+  &.table th {
+    color: $background;
+    background-color: $background-reverse;
+  }
+  .table th, .table td, .table-bordered {
+    border-color: $overlay;
+  }
+  .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th, .table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
+    background: $overlay;
+  }
+
+  // Navbar
+  &.navbar {
+    background: $background;
+    color: $header-color;
+  }
+  &.navbar .navbar-brand {
+    color: $header-color;
+    &:hover {
+      color: $header-color;
+    }
+  }
+  &.navbar .nav > li > a {
+    color: $link-color;
+    &:hover, &:focus {
+      background: none;
+    }
+    &:before {
+      background-color: $link-color;
+    }
+  }
+  & .navbar-toggle {
+    background: none;
+    .icon-bar {
+      background-color: $header-color;
+    }
+    &:hover {
+      background: none;
+    }
+  }
+  &.navbar .nav > .active > a,
+  &.navbar .nav > .current-menu-item > a
+  &.navbar .nav > .active > a:hover,
+  &.navbar .nav > .current-menu-item > a:hover,
+  &.navbar .nav > .active > a:focus,
+  &.navbar .nav > .current-menu-item > a:focus,
+  &.navbar .nav > li > a:focus,
+  &.navbar .nav > li > a:hover,
+  &.navbar .nav li.dropdown.open > .dropdown-toggle,
+  &.navbar .nav li.dropdown.active > .dropdown-toggle,
+  &.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: $header-color;
+  }
+  & .dropdown-menu {
+    background: rgba($background, .95);
+    @include box-shadow(0px 1px 2px rgba($black, .1), 0px 4px 0px rgba(darken($background , 8%), .3));
+    >li > a {
+      color: $header-color;
+    }
+  }
+  & .dropdown-menu a:hover , & .dropdown-menu > .active > a, & .dropdown-menu > .active > a:hover, & .dropdown-menu > .active > a:focus {
+    background: $background-reverse;
+    color: $background;
+    i {
+      color: $background;
+    }
+  }
+  &.navbar .nav > li > .dropdown-menu:after, &.navbar .nav > li > .dropdown-menu:before {
+    display: none;
+  }
+  &.navbar-scrolled {
+    background: rgba($background, .95);
+  }
+  &.navbar-scrolled {
+    @include box-shadow(0px 4px 0px rgba(darken($background, 8%), .3));
+  }
+  .dropdown-submenu>a:after {
+    border-left-color: $header-color !important;
+  }
+  .dropdown-submenu>a:hover:after {
+    border-left-color: $background !important;
+  }
+  .dropdown-menu .divider  {
+    background-color: $overlay;
+  }
+
+  &.navbar .nav-highlight > a {
+    color: $background !important;
+    &:after {
+      background: $link-color;
+    }
+    &:hover {
+      color: $background !important;
+      &:after {
+        background: rgba($link-color, .8);
+      }
+    }
+  }
+  &.navbar li.nav-highlight-ghost > a {
+    color: $link-color;
+    &:after {
+      border: 1px solid $link-color;
+    }
+    &:hover {
+      color: rgba($link-color, .8);
+      &:after {
+        border-color: rgba($link-color, .8);
+      }
+    }
+  }
+
+  // Mega menus
+  .menu-item-object-oxy_mega_menu {
+    color: $header-color;
+  }
+  .menu-item-object-oxy_mega_menu .dropdown-menu > li > ul > li > a {
+    color: $link-color;
+  }
+  .menu-item-object-oxy_mega_menu .dropdown-menu > li > strong a:hover {
+    background: $background-reverse;
+  }
+  .menu-item-object-oxy_mega_menu .dropdown-menu > li > ul > li > a:hover {
+    color: $background;
+    background: $background-reverse;
+  }
+  .menu-item-object-oxy_mega_menu .dropdown-menu > li > ul > li.current-menu-item > a {
+    color: $background;
+    background: $background-reverse;
+  }
+  .menu-item-object-oxy_mega_menu .dropdown-menu > li > p {
+    border-bottom-color: $overlay;
+  }
+  .menu-item-object-oxy_mega_menu .dropdown-menu > li:before {
+    background: $overlay;
+  }
+
+  @media (max-width: 979px) {
+    &.navbar .nav > li > a {
+      border-radius: 0;
+      &:hover {
+        background: darken($background, 5%);
+        color: $header-color;
+      }
+    }
+    &.navbar .dropdown-menu {
+      background: darken($background, 5%);
+      border-radius: 0;
+      box-shadow: none;
+      > li > a {
+        border-radius: 0;
+        color: $header-color;
+      }
+      li > a:hover, li > a:focus, li.active > a {
+        background: darken($background, 8%);
+        color: $background-reverse;
+      }
+    }
+    .dropdown-submenu > ul > li > a {
+      background: darken($background, 10%);
+    }
+    .dropdown-submenu > ul > li > a:hover {
+      background: darken($background, 5%);
+    }
+    .dropdown-submenu>a:after {
+      border-left-color: transparent !important;
+      border-top-color: $header-color !important;
+    }
+    &.navbar .nav-highlight > a {
+      color: $link-color !important;
+      &:after {
+        background: transparent;
+      }
+      &:hover {
+        color: $link-color !important;
+        &:after {
+          background: transparent;
+        }
+      }
+    }
+    .menu-item-object-oxy_mega_menu .dropdown-menu > li > ul > li > a:hover {
+      background: darken($background, 8%);
+      color: $background-reverse;
+    }
+    .menu-item-object-oxy_mega_menu .dropdown-menu > li:before {
+      display: none;
+    }
+  }
+
+  // Pagination
+  .pagination > li > a {
+    background: $primary-button-background;
+    color: $primary-button-text;
+  }
+  .pagination > .active > a, .pagination > .active > span, .pagination > li > a:hover {
+    background: rgba($primary-button-background, .8);
+    i {
+      color: $primary-button-text;
+    }
+  }
+  .pagination >li:first-child {
+    i {
+      color: $primary-button-text;
+    }
+    a:after {
+      border-right-color: $primary-button-background;
+    }
+    a:hover {
+      background: rgba($primary-button-background, .8);
+      &:after {
+        border-right-color: rgba($primary-button-background, .8);
+      }
+    }
+  }
+  .pagination >li:last-child {
+    i {
+      color: $primary-button-text;
+    }
+    a:after {
+      border-left-color: $primary-button-background;
+    }
+    a:hover {
+      background: rgba($primary-button-background, .8);
+      &:after {
+        border-left-color: rgba($primary-button-background, .8);
+      }
+    }
+  }
+
+  // Tooltips
+  .tooltip-inner {
+    background-color: $background-reverse;
+    color: $background;
+  }
+  .tooltip {
+    &.in {
+      opacity: 1;
+    }
+    &.top .tooltip-arrow {
+      border-top-color: $background-reverse;
+    }
+    &.right .tooltip-arrow {
+      border-right-color: $background-reverse;
+    }
+    &.left .tooltip-arrow {
+      border-left-color: $background-reverse;
+    }
+    &.bottom .tooltip-arrow {
+      border-bottom-color: $background-reverse;
+    }
+  }
+
+  // Progress bars
+  .progress {
+    background: $overlay;
+    box-shadow: none;
+    .progress-bar-primary {
+      background: $primary-button-background;
+      box-shadow: none;
+      span {
+        color: $primary-button-text;
+      }
+    }
+  }
+  // Badges
+  .badge {
+    background: $background-reverse;
+    color: $background;
+  }
+
+  // Tabs & Pills
+  .tab-content, .nav-tabs .active a, .tab-content, .nav-tabs .active a:hover {
+    background: $background-reverse;
+  }
+  .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    color: $background;
+    background-color: $background-reverse;
+  }
+  .nav-tabs >li.active > a {
+    color: $background;
+    &:hover {
+      color: $background;
+    }
+  }
+  .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > li > a:hover {
+    background: $background-reverse;
+    color: $background;
+    .badge {
+      background: $background;
+      color: $background-reverse;
+    }
+    &:hover {
+      color: $background;
+    }
+  }
+  .tab-pane, .tab-pane.active {
+    color: $background;
+    h1, h2, h3, h4, h5, h6, a, p {
+      color: $background;
+    }
+    .btn {
+      color: $background-reverse !important;
+      background: $background !important;
+    }
+    .tooltip-inner {
+      background-color: $background;
+      color: $background-reverse;
+    }
+    .tooltip {
+      &.top .tooltip-arrow {
+        border-top-color: $background;
+      }
+      &.right .tooltip-arrow {
+        border-right-color: $background;
+      }
+      &.left .tooltip-arrow {
+        border-left-color: $background;
+      }
+      &.bottom .tooltip-arrow {
+        border-bottom-color: $background;
+      }
+    }
+  }
+
+  // Affix
+  .docs-sidebar-nav, &.docs-sidebar-nav {
+    background: none;
+    li a {
+      background: $overlay;
+    }
+    li.active a {
+      background: $link-color;
+      color: $background;
+    }
+  }
+
+  // Panels
+  .panel, .well {
+    background: $overlay;
+  }
+  .panel-heading {
+    background: $background-reverse;
+    a, .panel-title{
+      color: $background;
+      text-decoration: none;
+    }
+  }
+
+  // Carousel
+  .carousel-indicators li {
+    background-color: rgba($background-reverse, .5);
+  }
+  .carousel-indicators li.active {
+    background-color: rgba($background-reverse, 1);
+  }
+
+  // Thumbnails
+  .thumbnail {
+    background: $overlay;
+    &:hover {
+      background: $background-reverse;
+      color: $background;
+    }
+  }
+
+  // Misc elements
+  .overlay {
+    background: $overlay !important;
+  }
+  .post-media {
+    background-color: $overlay !important;
+  }
+  .media-inner:after {
+    background: $background-reverse;
+  }
+  .social-icons li a, .social-share li a {
+    background-color: $background-reverse;
+    i {
+      color: $background;
+    }
+    &:not([data-iconcolor]):hover {
+      background-color: rgba($background-reverse, .8);
+    }
+  }
+  .social-simple li a i {
+    color: $background-reverse;
+  }
+  .social-simple li a:not([data-iconcolor]):hover i {
+    color: rgba($icon-color, .8);
+  }
+  .grid-post .post-extras:before {
+    background: $background;
+  }
+  .post-extras i {
+    color: $link-color;
+  }
+  .list-fancy-icons li, &.list-fancy-icons li, .list-fancy-icons .list-item, &.list-fancy-icons .list-item {
+    background: $background;
+    .round, .square {
+      background: $background-reverse;
+    }
+    i {
+      color: $background;
+    }
+  }
+  .box-inner {
+    background: $background-reverse;
+    i {
+      color: $background;
+    }
+  }
+  .box-badge {
+    background: rgba($background-reverse, .9);
+    color: $background;
+  }
+  .bordered:after {
+    background: $background-reverse;
+  }
+  .vertical-icon-border [class^="col-md"]:first-child, .horizontal-icon-border [class^="box-"]:before {
+    border-color: $background-reverse;
+  }
+  #infscr-loading {
+    background: $background-reverse;
+    color: $background;
+  }
+  .counter .value {
+    color: $header-color;
+  }
+  .counter.underline:after {
+    background: $background-reverse;
+  }
+  .countdown.underline b:before {
+    background: $background-reverse;
+  }
+
+    // Gravity forms
+  .gform_wrapper .gsection {
+    border-color: $overlay;
+  }
+  .gf_progressbar {
+    background: $overlay;
+  }
+  .gf_progressbar_percentage {
+    background: $link-color;
+    color: $background;
+  }
+
+
+  // Audio player
+  .mejs-audio {
+    background-color: $background-reverse;
+    color: $background;
+  }
+  .mejs-container .mejs-controls .mejs-time span {
+    color: $background;
+  }
+  .mejs-controls .mejs-button button:hover {
+    background: transparent;
+  }
+  .mejs-controls .mejs-time-rail .mejs-time-loaded {
+    background: $background;
+  }
+  .mejs-controls .mejs-time-rail .mejs-time-current, .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+    background: $overlay;
+  }
+
+   // Select 2
+  .select2-container {
+    background: $form-background;
+  }
+  .select2-container .select2-choice {
+    color: $form-color;
+  }
+  .select2-container .select2-choice .select2-arrow b:after {
+    color: $form-color;
+  }
+  .select2-drop-active {
+    background: rgba($form-background, .9);
+    color: $form-color;
+    @include box-shadow(0px 2px 4px rgba(#000, .1));
+  }
+  .select2-results .select2-highlighted {
+    background-color: $form-active;
+    color: $form-color;
+  }
+  .select2-results {
+    background: $form-background;
+  }
+  .select2-search {
+    background: $background;
+  }
+
+
+  // Hexagon
+  .hex {
+    background-color: $background-reverse;
+    color: $background;
+    a, i {
+      color: $background;
+    }
+    a:hover, &:hover {
+      color: $background;
+    }
+    &:before {
+      border-bottom-color: $background-reverse;
+    }
+    &:after {
+      border-top-color: $background-reverse;
+    }
+  }
+
+  // Hexagon Portfolio
+  .hex-left:after, .hex-left:before, .hex-right:after, .hex-right:before  {
+    background-color: $background;
+  }
+
+  // Pricing tables
+  .pricing-head, .pricing-body {
+    background: $primary-button-background;
+    color: $primary-button-text;
+    h4, small {
+      color: $primary-button-text;
+    }
+  }
+  .pricing-list li {
+    border-color: $overlay;
+  }
+  .pricing-col .btn-primary {
+    background: $primary-button-text;
+    color: $primary-button-background;
+    &:hover {
+      background: darken($primary-button-text, 6%);
+    }
+  }
+
+  // Flexslider
+  .flexslider figcaption {
+    background: rgba($background, .9);
+    @include box-shadow(0px 4px 0px rgba(darken($background , 8%), .3));
+  }
+
+  .flex-directions-fancy .flex-direction-nav a {
+    background: $background-reverse;
+    color: $background;
+  }
+  .flex-control-nav a {
+    background: rgba($background-reverse, .5);
+  }
+  .flex-control-nav a.flex-active {
+    background: rgba($background-reverse, 1);
+  }
+
+  // Widgets
+  .sidebar  {
+    color: $text-color;
+    h3 {
+      color: $header-color;
+    }
+    a {
+      color: $text-color;
+    }
+    a:hover {
+      color: $link-color;
+    }
+  }
+  .widget_search {
+    .btn {
+      background: $form-active;
+      i {
+        color: $icon-color !important;
+      }
+    }
+  }
+  .sidebar-widget .post-icon {
+    background: $background-reverse;
+    i {
+      color: $background;
+    }
+  }
+  .widget_tag_cloud ul a {
+    background: $background-reverse;
+    color: $background;
+    &:hover {
+      background: rgba($background-reverse, .9);
+      color: $background;
+    }
+  }
+  .widget_calendar {
+    tbody a {
+      background: $background-reverse;
+      color: $background;
+      &:hover {
+        background: darken($background-reverse, 7%);
+        color: $background;
+      }
+    }
+    tfoot {
+      background: $overlay;
+    }
+  }
+  .widget_nav_menu .sub-menu {
+    border-color: $overlay;
+  }
+  .widget_oxy_twitter li:before {
+    color: $background-reverse;
+  }
+
+  .widget_swatch_wpml_language_selector li:before {
+    background: $overlay;
+  }
+
+  // WOO commerce
+
+  // - buttons
+  .button {
+    background: $primary-button-background;
+    color: $primary-button-text;
+    &:hover {
+      background: rgba($primary-button-background, .9);
+      color: $primary-button-text;
+    }
+  }
+
+  // - Breadcrumbs
+  .woocommerce-breadcrumb {
+    color: $primary-button-text;
+    a {
+      color: $primary-button-text;
+    }
+    a:hover {
+     color: $primary-button-text;
+    }
+    span:nth-child(1) {
+      background: $primary-button-background;
+      &:after {
+        border-left-color: $primary-button-background;
+      }
+      &:hover {
+        background: darken($primary-button-background, 5%);
+        &:after {
+          border-left-color: darken($primary-button-background, 5%);
+        }
+      }
+    }
+    span:nth-child(2) {
+      background: lighten($primary-button-background, 5%);
+      &:after {
+        border-left-color: lighten($primary-button-background, 5%);
+      }
+      &:hover {
+        background: lighten($primary-button-background, 3%);
+        &:after {
+          border-left-color: lighten($primary-button-background, 3%);
+        }
+      }
+    }
+    span:nth-child(3) {
+      background: lighten($primary-button-background, 10%);
+      &:after {
+        border-left-color: lighten($primary-button-background, 10%);
+      }
+      &:hover {
+        background: lighten($primary-button-background, 7%);
+        &:after {
+          border-left-color: lighten($primary-button-background, 7%);
+        }
+      }
+    }
+    span:nth-child(4) {
+      background: lighten($primary-button-background, 15%);
+      &:after {
+        border-left-color: lighten($primary-button-background, 15%);
+      }
+      &:hover {
+        background: lighten($primary-button-background, 12%);
+        &:after {
+          border-left-color: lighten($primary-button-background, 12%);
+        }
+      }
+    }
+    span:nth-child(5) {
+      background: lighten($primary-button-background, 20%);
+      &:after {
+        border-left-color: lighten($primary-button-background, 20%);
+      }
+      &:hover {
+        background: lighten($primary-button-background, 17%);
+        &:after {
+          border-left-color: lighten($primary-button-background, 17%);
+        }
+      }
+    }
+  }
+
+  // - Product list oredring
+  .woocommerce-ordering {
+    .select-wrap {
+      background: $primary-button-background;
+      color: $primary-button-text;
+    }
+    .select-wrap:after {
+      color: $primary-button-text;
+    }
+    select {
+      color: $primary-button-text;
+    }
+  }
+  // - Product title
+  .product .product-title:after {
+    background: $background-reverse;
+  }
+  .star-rating {
+    color: $background-reverse;
+  }
+
+  // - On sale
+  .onsale {
+    background: $primary-button-background;
+    color: $primary-button-text;
+  }
+  // - Pagination
+  .page-numbers {
+    a, span {
+      color: $primary-button-text;
+    }
+    li {
+      background: $primary-button-background;
+    }
+    .current, li a:hover {
+      background: $overlay;
+    }
+  }
+  .pager li > a:focus {
+    background: $primary-button-background;
+    color: $primary-button-text;
+  }
+
+  // Product category
+  .product-category h3 {
+    background: $background-reverse;
+    color: $background;
+    mark {
+      background: $overlay;
+      color: $background;
+    }
+  }
+  // - Product nav
+  .product-nav {
+    a i {
+      background: $background-reverse;
+      color: $background;
+    }
+  }
+  .product-images figcaption {
+    box-shadow: none;
+    background: $primary-button-background;
+    i{
+      color: $primary-button-text;
+    }
+  }
+  .product-images .flex-active {
+    @include box-shadow(0px 3px 0px $background-reverse);
+  }
+  .order_details {
+    background: $overlay;
+    li {
+      border-color: lighten($overlay, 10%);
+    }
+  }
+
+  // Product variations
+  .product-type-variable .variations  {
+    .select-wrap {
+      margin-bottom: 24px;
+      select {
+        line-height: 28px;
+      }
+    }
+    .label {
+      color: $header-color;
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  // Product reviews
+  .single-product-extras {
+    input, textarea {
+      background: $background;
+      color: $background-reverse;
+    }
+    input[type="submit"]:hover {
+      background: rgba($background, .9);
+      color: $background-reverse;
+    }
+    .table {
+      background: transparent !important;
+    }
+  }
+  #review_form:before {
+    background: darken($background-reverse, 10%);
+  }
+  // - Side cart
+  &.mini-cart-container.active {
+    box-shadow: -10px 0px 0px rgba(darken($background , 8%), .3);
+  }
+  .cart_list li {
+    border-color: $overlay;
+  }
+  .cart-actions {
+    background: $background;
+    color: $link-color;
+  }
+
+  // - Woocommerce widgets
+  .widget_product_tag_cloud {
+    a {
+      background: $background-reverse;
+      color: $background;
+      &:hover {
+        background: rgba($background-reverse, .9);
+        color: $background;
+      }
+    }
+  }
+  .product_list_widget .star-rating {
+    color: $link-color;
+  }
+  .widget_price_filter .ui-slider {
+    .ui-slider-range {
+      background: $overlay;
+    }
+    .ui-slider-handle {
+      background: $background-reverse;
+    }
+  }
+  .widget_product_search form:after {
+    color: $background;
+  }
+}
+
+
+// Hexagon mixin
+@mixin hex($size) {
+  display: block;
+  margin-top: round($size / 4);
+  margin-bottom: round($size / 4);
+  width: round($size / 1.15384615);
+  height: round($size / 2);
+  position: relative;
+  text-align: center;
+  line-height: round($size / 2);
+  max-width: 100%;
+  &:before, &:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    left: 0;
+    position: absolute;
+  }
+  &:before {
+    border-bottom: round($size / 4) solid;
+    border-left: round($size / 2.30769231) solid transparent;
+    border-right: round($size / 2.30769231) solid transparent;
+    top: - round($size / 4);
+  }
+  &:after {
+    bottom: - round($size / 4);
+    border-top: round($size / 4) solid;
+    border-left: round($size / 2.30769231) solid transparent;
+    border-right: round($size / 2.30769231) solid transparent;
+  }
+  i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+// Alt Hexagon mixin
+@mixin hex-alt($size) {
+  display: block;
+  margin-left: round($size / 3.46666667);
+  margin-right: round($size / 3.46666667);
+  width: round($size / 1.733333333);
+  height: $size;
+  position: relative;
+  text-align: center;
+  line-height: $size;
+  &:before, &:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    top: 0;
+    position: absolute;
+  }
+  &:before {
+    border-right: round($size / 3.46666667) solid;
+    border-top: round($size / 2) solid transparent;
+    border-bottom: round($size / 2) solid transparent;
+    left: - round($size / 3.46666667);
+  }
+  &:after {
+    border-left: round($size / 3.46666667) solid;
+    border-top: round($size / 2) solid transparent;
+    border-bottom: round($size / 2) solid transparent;
+    right: - round($size / 3.46666667);
+  }
+}
+
+// Stripe gradient mixin
+@mixin gradient-striped($color: #555, $angle: 45deg) {
+  background-color: $color;
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(.25, rgba(255,255,255,.15)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255,255,255,.15)), color-stop(.75, rgba(255,255,255,.15)), color-stop(.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient($angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
+}
+
+// Vertical gradient mixin
+@mixin gradient-vertical($startColor: #555, $endColor: #333) {
+  background-color: mix($startColor, $endColor, 60%);
+  background-image: -moz-linear-gradient(top, $startColor, $endColor); // FF 3.6+
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor); // Safari 5.1+, Chrome 10+
+  background-image: -o-linear-gradient(top, $startColor, $endColor); // Opera 11.10
+  background-image: linear-gradient(to bottom, $startColor, $endColor); // Standard, IE10
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($startColor)}', endColorstr='#{ie-hex-str($endColor)}', GradientType=0); // IE9 and down
+}
+// Reset filters for IE
+@mixin reset-filter() {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}

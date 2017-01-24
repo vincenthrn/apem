@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR (c) 2014 Oxygenna.com
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Angle Frontend Translation File 1.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-01-13 10:08+0000\n"
+"PO-Revision-Date: 2014-01-14 01:53+0100\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.3\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+
+#: build/archive.php:18 build/archive.php:22 build/archive.php:26
+#, fuzzy
+msgid "All posts from"
+msgstr "Tous les posts de"
+
+#: build/inc/options/widgets/swatch_twitter.php:20
+#, fuzzy
+msgid "Displays you latest tweets"
+msgstr "Affiche vos derniers tweets"
+
+#: build/inc/options/widgets/swatch_twitter.php:21
+#, fuzzy
+msgid "Twitter Feed"
+msgstr "Compte Twitter"
+
+#: build/inc/options/widgets/swatch_twitter.php:30
+#, fuzzy, php-format
+msgid ""
+"Please configure your Twitter username for the <a href=\"%s\">Twitter "
+"Widget</a>."
+msgstr ""
+"Veuillez configurer votre nom d'utilisateur Twitter pour le <a href=\"%s"
+"\">Widget Twitter</a>."
+
+#: build/inc/options/widgets/default_overrides.php:23
+#, fuzzy
+msgid "Recent Posts"
+msgstr "Posts récents"
+
+#: build/inc/options/widgets/default_overrides.php:73
+#, fuzzy
+msgid "Archives"
+msgstr "Archives"
+
+#: build/inc/options/widgets/default_overrides.php:81
+#, fuzzy
+msgid "Select Month"
+msgstr "Sélectionner le mois"
+
+#: build/inc/frontend.php:45
+#, fuzzy
+msgid "Square Image"
+msgstr "Image carrée"
+
+#: build/inc/frontend.php:46
+#, fuzzy
+msgid "Hexagon Image"
+msgstr "Image hexagonale"
+
+#: build/inc/frontend.php:47
+#, fuzzy
+msgid "Rectangle Image"
+msgstr "Image rectangulaire"
+
+#: build/inc/frontend.php:49
+#, fuzzy
+msgid "Square Small Image"
+msgstr "Petite image carrée"
+
+#: build/inc/frontend.php:50
+#, fuzzy
+msgid "Hexagon Small Image"
+msgstr "Petite image hexagonale"
+
+#: build/inc/frontend.php:51
+#, fuzzy
+msgid "Rectangle Small Image"
+msgstr "Petite image rectangulaire"
+
+#: build/inc/frontend.php:113
+#, fuzzy
+msgid "Primary Navigation"
+msgstr "Navigation principale"
+
+#: build/inc/frontend.php:114
+#, fuzzy
+msgid "Account Navigation"
+msgstr "Navigation du compte"
+
+#: build/inc/frontend.php:236
+#, fuzzy
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: build/inc/frontend.php:236
+#, fuzzy
+msgid "(Edit)"
+msgstr "(Éditer)"
+
+#: build/inc/frontend.php:258
+#, fuzzy
+msgid "reply"
+msgstr "répondre"
+
+#: build/inc/frontend.php:317
+#, fuzzy
+msgid "YOUR NAME *"
+msgstr "VOTRE NOM *"
+
+#: build/inc/frontend.php:318
+#, fuzzy
+msgid "YOUR EMAIL *"
+msgstr "VOTRE EMAIL *"
+
+#: build/inc/frontend.php:322
+#, fuzzy, php-format
+msgid "Required fields are marked %s"
+msgstr "Les champs obligatoires sont marqués %s"
+
+#: build/inc/frontend.php:325
+#, fuzzy
+msgid "YOUR MESSAGE"
+msgstr "VOTRE MESSAGE"
+
+#: build/inc/frontend.php:326
+#, fuzzy, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+"Vous devez être <a href=\"%s\">connecté</a> pour poster un commentaire."
+
+#: build/inc/frontend.php:327
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Se "
+"déconnecter de ce compte\">Déconnexion ?</a>"
+
+#: build/inc/frontend.php:333 build/comments.php:26
+#, fuzzy
+msgid "Join the conversation"
+msgstr "Rejoindre la conversation"
+
+#: build/inc/frontend.php:334
+#, fuzzy
+msgid "Leave a Reply"
+msgstr "Laisser une réponse"
+
+#: build/inc/frontend.php:335
+#, fuzzy
+msgid "Cancel reply"
+msgstr "Annuler la réponse"
+
+#: build/inc/frontend.php:336
+#, fuzzy
+msgid "Add comment"
+msgstr "Ajouter un commentaire"
+
+#: build/inc/frontend.php:1111
+#, fuzzy
+msgid "Search"
+msgstr "Chercher"
+
+#: build/inc/frontend.php:1140
+#, fuzzy
+msgid ""
+" <span class=\"hex-alt\"><i class=\"fa fa-angle-left\"></i></span>Previous"
+msgstr ""
+" <span class=\"hex-alt\"><i class=\"fa fa-angle-left\"></i></span>Précedent"
+
+#: build/inc/frontend.php:1141
+#, fuzzy
+msgid "Next<span class=\"hex-alt\"><i class=\"fa fa-angle-right\"></i></span>"
+msgstr ""
+"Suivant<span class=\"hex-alt\"><i class=\"fa fa-angle-right\"></i></span>"
+
+#: build/inc/frontend.php:1210
+#, fuzzy
+msgid "Next page"
+msgstr "Page suivante"
+
+#: build/inc/frontend.php:1211
+#, fuzzy
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: build/inc/frontend.php:1337
+#, fuzzy, php-format
+msgid "Search Results: &ldquo;%s&rdquo;"
+msgstr "Résultats de la recherche : &ldquo;%s&rdquo;"
+
+#: build/inc/frontend.php:1339
+#, fuzzy, php-format
+msgid "&nbsp;&ndash; Page %s"
+msgstr "&nbsp;&ndash; Page %s"
+
+#: build/partials/post-extras.php:32
+#, fuzzy
+msgid "No comments"
+msgstr "Aucun commentaire"
+
+#: build/partials/post-extras.php:32
+#, fuzzy
+msgid "1 comment"
+msgstr "1 commentaire"
+
+#: build/partials/post-extras.php:32
+#, fuzzy, php-format
+msgid "% comments"
+msgstr "Aucun commentaire"
+
+#: build/partials/content-video.php:52 build/partials/content-link.php:48
+#: build/partials/content-audio.php:45 build/partials/content-gallery.php:64
+#: build/partials/content.php:37 build/partials/content-image.php:37
+#: build/partials/content-search.php:19
+#, fuzzy, php-format
+msgid "Permalink to %s"
+msgstr "Permalien vers %s"
+
+#: build/partials/content-portfolio-single-small.php:146
+#: build/partials/content-portfolio-single-big.php:139
+#, fuzzy
+msgid "Features"
+msgstr "Particularités"
+
+#: build/partials/content-portfolio-single-small.php:160
+#: build/partials/content-portfolio-single-big.php:153
+#, fuzzy
+msgid "URL"
+msgstr "URL"
+
+#: build/partials/shortcodes/portfolio/filters.php:10
+#, fuzzy
+msgid "all"
+msgstr "tout"
+
+#: build/partials/shortcodes/countdown/countdown.php:7
+#, fuzzy
+msgid "days"
+msgstr "jours"
+
+#: build/partials/shortcodes/countdown/countdown.php:15
+#, fuzzy
+msgid "hours"
+msgstr "heures"
+
+#: build/partials/shortcodes/countdown/countdown.php:23
+#, fuzzy
+msgid "minutes"
+msgstr "minutes"
+
+#: build/partials/shortcodes/countdown/countdown.php:31
+#, fuzzy
+msgid "seconds"
+msgstr "secondes"
+
+#: build/partials/content-account.php:28
+#, fuzzy
+msgid "create an account menu in the admin options"
+msgstr "créer un compte dans les options d'administration"
+
+#: build/partials/portfolio-social-links.php:21
+#, fuzzy
+msgid "Share"
+msgstr "Partager"
+
+#: build/partials/post-related.php:43
+#, fuzzy
+msgid "Related Posts"
+msgstr "Posts connexes"
+
+#: build/partials/loop.php:41
+#, fuzzy
+msgid "Nothing Found"
+msgstr "Rien n'a été trouvé"
+
+#: build/partials/loop.php:47
+#, fuzzy
+msgid "Sorry, no posts were found for this category."
+msgstr "Désolé, aucun post trouvé dans cette catégorie"
+
+#: build/partials/loop.php:50
+#, fuzzy
+msgid "Sorry, no posts found in that timeframe"
+msgstr "Désolé, aucun post trouvé pour cette période"
+
+#: build/partials/loop.php:53
+#, fuzzy
+msgid "Sorry, no posts from that author were found"
+msgstr "Désolé, aucun post trouvé par cet auteur"
+
+#: build/partials/loop.php:56
+#, fuzzy, php-format
+msgid "Sorry, no posts were tagged with  \"%1$s\""
+msgstr "Désolé aucun post n'a été taggé avec \"%1$s\""
+
+#: build/partials/loop.php:59
+#, fuzzy, php-format
+msgid "Sorry, no search results were found for  \"%1$s\""
+msgstr "Désolé, aucun résultat n'a été trouvé pour  \"%1$s\""
+
+#: build/partials/loop.php:62
+#, fuzzy
+msgid "Sorry, nothing found"
+msgstr "Désolé, rien n'a été trouvé"
+
+#: build/partials/social-links.php:22
+#, fuzzy
+msgid "Share this post"
+msgstr "Partager ce post"
+
+#: build/comments.php:41
+#, fuzzy
+msgid "&larr; Older"
+msgstr "&larr; Ancien"
+
+#: build/comments.php:42
+#, fuzzy
+msgid "Newer &rarr;"
+msgstr "Plus récent &rarr;"
+
+#: build/comments.php:53
+#, fuzzy
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés"
+
+#: build/tag.php:16
+#, fuzzy
+msgid "All posts tagged"
+msgstr "Tous les posts taggés"
+
+#: build/search.php:16
+#, fuzzy
+msgid "Results for"
+msgstr "Résultat pour"
+
+#: build/single.php:42
+#, fuzzy
+msgid "Previous"
+msgstr "Précédent"
+
+#: build/single.php:49
+#, fuzzy
+msgid "Next"
+msgstr "Suivant"

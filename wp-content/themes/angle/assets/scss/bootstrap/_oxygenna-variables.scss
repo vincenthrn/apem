@@ -1,0 +1,83 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+// Global values
+// --------------------------------------------------
+$font-size-base: 16px !default;
+$border-radius-base:        0px !default;
+$border-radius-large:       0px !default;
+$border-radius-small:       0px !default;
+$line-height-base:   1.5 !default;
+
+// Grays
+// -------------------------
+$black:                 #000 !default;
+$gray-darker:            #222 !default;
+$gray-dark:              #444 !default;
+$gray:                  #777 !default;
+$gray-light:             #d8d8d8 !default;
+$gray-lighter:           #f2f2f4 !default;
+$white:                 #fff !default;
+
+
+// Accent colors
+// -------------------------
+$blue:                  #42576a !default;
+$blue-dark:              #0064cd !default;
+$green:                 #427e77 !default;
+$red:                   #e74c3c !default;
+$yellow:                #ffc40d !default;
+$orange:                #f4a868 !default;
+$pink:                  #f17c72 !default;
+$purple:                #7a43b6 !default;
+
+$navbar-height:                    80px;
+
+// Form states and alerts
+// -------------------------
+$state-warning-text:             #fff !default;
+$state-warning-bg:               #f7b244 !default;
+$state-warning-border:           #f7b244 !default;
+
+$state-error-text:               #f2d7d7 !default;
+$state-error-bg:                 #dd5f52 !default;
+$state-error-border:             #AA463C !default;
+
+$state-success-text:             #328f0c !default;
+$state-success-bg:               #86df61 !default;
+$state-success-border:           #86df61 !default;
+
+$state-info-text:                #1a4f72 !default;
+$state-info-bg:                  #7cbfec !default;
+$state-info-border:              #7cbfec !default;
+
+
+// Buttons
+// -------------------------
+$btn-default-bg:                 $gray !default;
+$btn-primary-bg:                 darken($red, 5) !default;
+$btn-info-bg:                    #5d89ac !default;
+$btn-success-bg:                 $green !default;
+$btn-warning-bg:                 darken($orange, 10) !default;
+$btn-danger-bg:                  $red !default;
+$btn-inverse-bg:                 #444 !default;
+
+// Header
+// -------------------------
+$navbar-height: 90px;
+$navbar-scrolled: 70px;
+$logo-height: 42px;
+$logo-width: 42px;
+$element-height: 24px;
+$dropdown-width: 200px;
+
+// Overrides
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+// Point at which the navbar becomes uncollapsed
+$grid-float-breakpoint:     $screen-md-min;
+// Point at which the navbar begins collapsing
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
