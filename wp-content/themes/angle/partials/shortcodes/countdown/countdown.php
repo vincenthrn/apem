@@ -4,7 +4,7 @@
             0
         </span>
         <b>
-            <?php _e('days', 'angle-td'); ?>
+            <?php _e('jours', 'angle-td'); ?>
         </b>
     </div>
     <div class="counter-element">
@@ -12,7 +12,7 @@
             0
         </span>
         <b>
-            <?php _e('hours', 'angle-td'); ?>
+            <?php _e('heures', 'angle-td'); ?>
         </b>
     </div>
     <div class="counter-element">
@@ -28,7 +28,9 @@
             0
         </span>
         <b>
-            <?php _e('seconds', 'angle-td'); ?>
+            <?php _e('secondes', 'angle-td'); ?>
         </b>
     </div>
 </h1>
+<br>
+<br>
