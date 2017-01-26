@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     var scene = new ScrollMagic.Scene({offset: height/4})
         .setTween(tween)
-        .addIncators()
+        // .addIncators()
 
     var scene2 = new ScrollMagic.Scene({offset: height/4})
         .setTween(tween2)
