@@ -13,6 +13,7 @@
 $post_swatch = get_post_meta( $post->ID, THEME_SHORT. '_swatch', true );
 $extra_post_class  = oxy_get_option('blog_post_icons') == 'on'? 'post-showinfo':''; ?>
 
+
 <article id="post-<?php the_ID(); ?>" <?php post_class( $extra_post_class.' '.$post_swatch ); ?>>
     <div class="post-media overlay">
         <?php

@@ -24,14 +24,76 @@ include OXY_THEME_DIR . 'inc/woocommerce.php';
 include OXY_THEME_DIR . 'vendor/oxygenna/oxygenna-framework/inc/OxygennaTheme.php';
 include OXY_THEME_DIR . 'vendor/oxygenna/oxygenna-mega-menu/oxygenna-mega-menu.php';
 
+function mytheme_custom_styles() {
+    wp_enqueue_style( 'anim-style', get_theme_root_uri() . "/angle/assets/css/style-anim.css" );
+}
+add_action( 'wp_enqueue_scripts', 'mytheme_custom_styles' );
 
 
-if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 1);
 function my_jquery_enqueue() {
     wp_deregister_script('jquery');
     wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js", false, null);
     wp_enqueue_script('jquery');
 }
+
+
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "scroll_magic_enqueue", 2);
+function scroll_magic_enqueue() {
+    wp_register_script('scroll', "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js", false, null);
+    wp_enqueue_script('scroll');
+}
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "scroll_magicIndicators_enqueue", 2);
+function scroll_magicIndicators_enqueue() {
+    wp_register_script('scrollInd', "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js", false, null);
+    wp_enqueue_script('scrollInd');
+}
+
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "tween_enqueue", 4);
+function tween_enqueue() {
+    wp_register_script('tween', "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js", false, null);
+    wp_enqueue_script('tween');
+}
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "gsap_enqueue", 5);
+function gsap_enqueue() {
+    wp_register_script('gsap', "https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js", false, null);
+    wp_enqueue_script('gsap');
+}
+
+
+if (!is_admin()) add_action("wp_enqueue_scripts", "anim_enqueue", 6);
+function anim_enqueue() {
+    wp_register_script('anim', get_theme_root_uri() . "/angle/assets/js/script.js", false, null, $in_footer = true);
+    wp_enqueue_script('anim');
+}
+
+
+/**
+ * Apply new wpautop filter to Press Release content
+ */
+function km_filter_press_release_content() {
+    if ( ! is_singular( 'press-releases' ) ) {
+        return;
+    }
+    remove_filter( 'the_content', 'wpautop' );
+    add_filter( 'the_content', 'km_remove_wpautop_line_breaks' );
+}
+add_action( 'wp', 'km_filter_press_release_content' );
+/**
+ * Apply wpautop() to content and remove line breaks
+ *
+ * @param  string $content the_content().
+ * @return string          the_content() with line breaks removed.
+ */
+function km_remove_wpautop_line_breaks( $content ) {
+    return wpautop( $content, false );
+}
+
 
 
 // create theme

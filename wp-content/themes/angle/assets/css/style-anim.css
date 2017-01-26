@@ -1,0 +1,93 @@
+html{
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  overflow-x: hidden;
+}
+
+.anim-container{
+  background-color: #5776b6;
+  height: 900vh;
+  width: 100vw;
+  color: #FFF;
+}
+
+.scene{
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  position: fixed;
+  box-sizing: border-box;
+}
+
+/*** SCENE1 ***/
+.scene1__msg{margin-top: 50vh;}
+.scene1__msg2{display: none; margin-top: 10vh}
+.scene1__drop{display: none; background: url("../images/drop.png") no-repeat center center; height: 50vh; width: 100%; margin-top: 10vh}
+.scene1 .scene1__drop p{display: none; padding-top: 200px;}
+.scene1 .scene1__drop p span{display: block;}
+.scene1 .scene1__drop p span:first-child{font-size: 36px;}
+.scene1 .scene1__drop p span:last-child{font-size: 80px;}
+.scene1 .scene1__drop p span:last-child sup{font-size: 45px;}
+
+/*** SCENE2 ***/
+.scene2{display: none; left: 200vh; background: url("../images/afrika.svg") no-repeat center center; padding: 10vh 0; box-sizing: border-box;}
+.scene2 img{display: none; position: absolute; top: 38vh; left: 45%; width: 50px;}
+.scene2 p{display: none; text-align: right; width: 400px; position: absolute; top: 50%; left: 25%}
+.scene2 p span{display: block}
+
+/*** SCENE3 ***/
+.scene3{display: none; padding: 10vh 0; box-sizing: border-box;}
+.scene3__people img{opacity: 0; margin-top: 20vh;}
+.scene3__peoplePart1, .scene3__peoplePart2{display: inline-block;}
+.scene3__peopleChild{position: absolute; left: 45%; top: 5%;}
+
+/*** SCENE4 ***/
+.scene4{display: none; padding: 10vh 0; box-sizing: border-box;}
+.scene4__people img{margin-top: 20vh;}
+.scene4__peoplePart1, .scene4__peoplePart2{display: inline-block;}
+.scene4__peoplePart2{margin-left: 100px}
+.scene4__peopleChild{position: absolute; left: 45%; top: 5%;}
+
+/*** SCENE5***/
+.scene5{display: none; background-color: #d3c6a1;}
+.scene5__child{position: absolute; bottom: 13vh; right: 25%; z-index: 4}
+.scene5__puit{position: absolute; z-index: 2; height: 400px; bottom: 17vh; left: -250px;}
+.scene5__foreuse{position: absolute; z-index:3; height: 600px; left: -700px; bottom: 13vh;}
+.scene5__background{position: absolute; height: 80vh; top: 10vh; z-index: 1; right: -500px;}
+.scene5__nuage{position: absolute; z-index: 6; bottom: 13vh; left: 300px; display: none; height: 150px;}
+.scene5__paragraphe{position: absolute; z-index: 5; top: 30vh; right: 100px; width: 600px; text-align: left; opacity: 0;}
+.scene5__paragraphe2{position: absolute; z-index: 5; top: 30vh; right: 100px; width: 550px; text-align: left; opacity: 0;}
+.scene5__paragraphe2 span{font-size: 60px;}
+
+/***SCENE6 ***/
+.scene6{display: none; padding: 10vh 0; box-sizing: border-box;}
+.scene6__peuple{position: absolute; bottom: 0; left: 25vw; z-index: 5}
+.scene6__assos{position: absolute; bottom: 25vh; left: 45vw; z-index: 2;}
+.scene6__bubble1{position: absolute; left: 23vw; bottom: 30vh;}
+.scene6__bubble2{position: absolute; right: 17vw; bottom: 30vh;}
+.scene6__bubble3{display: none; position: absolute; left: 58vw; top: 32vh;}
+.scene6__famille{display: none; position: absolute; left: 41vw; margin-left: 8px; bottom: 0vh; z-index: 8;}
+
+/***SCENE7 ***/
+.scene7{display: none; padding: 10vh 0; box-sizing: border-box;}
+.scene7__famille{margin: 10vh auto; display: inline-block;}
+.scene7__bank{display: none; margin-left: 200px; margin-bottom: 80px;}
+.scene7__coin{display: none; position: absolute; right: 25vw; top: 30vh;}
+
+/***SCENE8 ***/
+.scene8{display: none; background: url("../images/decor.jpg") no-repeat -90% center #d3c6a1; background-size: auto 80%; padding: 10vh 0;}
+.scene8__paragraphe{display: none}
+.scene8__paragraphe2{display: none; opacity: 0;}
+.scene8__paragraphe3{display: none; opacity: 0;}
+.scene8__pompe{position: absolute; bottom: 15vh; left: 45vw; width: 500px;}
+.scene8__pompe2{display: none; position: absolute; bottom: 15vh; left: 45vw; width: 500px;}
+.scene8__technicien{position: absolute; bottom: 15vh; left: -15vw;}
+.scene8__cle{display: none; position: absolute; bottom: 10vh; left: 42vw; width: 200px;}
+.scene8__bank{display: none; position: absolute; bottom: 15vh; left: 25vw; opacity: 0}
+.scene8__arrow{display: none; position: absolute; bottom: 30vh; left: 48vw; opacity: 0}
+
+/***SCENE9***/
+.scene9{display: none;}
+.scene9__circle{position: absolute; z-index: 5; top: 10vh; left: 30vw; width: 800px;}
+.scene9__arrow{position: absolute; z-index: 2; top: 25vh; left:35vw; width: 610px;}
+.scene9__logo{position: absolute; top: 40vh; left: 44vw; width: 250px; opacity: 0;}

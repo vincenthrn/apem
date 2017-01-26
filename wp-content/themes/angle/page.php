@@ -21,6 +21,11 @@ while( have_posts() ) {
 
 $allow_comments = oxy_get_option( 'site_comments' );
 ?>
+
+
+
+
+
 <?php if( $allow_comments == 'pages' || $allow_comments == 'all' ) : ?>
 <section class="section <?php echo oxy_get_option('footer_swatch'); ?>">
     <div class="container">
